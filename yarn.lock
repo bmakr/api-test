@@ -462,6 +462,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/next@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "@types/next@npm:9.0.0"
+  dependencies:
+    next: "*"
+  checksum: 3115931293e1928df5ecd9d0cbf8b9edc9e2d7f67467db468f3d92dac7b44199706dbd4226c33193a7fcd3fe230a1ec2c796a1a585911d40be9fdaf47e8cb16e
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^20":
   version: 20.17.10
   resolution: "@types/node@npm:20.17.10"
@@ -645,12 +654,13 @@ __metadata:
   resolution: "api-test@workspace:."
   dependencies:
     "@eslint/eslintrc": ^3
+    "@types/next": ^9.0.0
     "@types/node": ^20
     "@types/react": ^19
     "@types/react-dom": ^19
     eslint: ^9
     eslint-config-next: 15.1.0
-    next: 15.1.0
+    next: ^15.1.0
     react: ^19.0.0
     react-dom: ^19.0.0
     typescript: ^5
@@ -2310,7 +2320,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:15.1.0":
+"next@npm:*, next@npm:^15.1.0":
   version: 15.1.0
   resolution: "next@npm:15.1.0"
   dependencies:
