@@ -2,9 +2,6 @@ import { NextRequest, NextResponse } from "next/server"
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://actual.so',
-  'https://www.actual.sh',
-  'https://actual.cx',
 ];
 
 export function middleware(request: NextRequest) {
