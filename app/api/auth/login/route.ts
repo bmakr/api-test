@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 function requireAuthKey({ req }: { req: NextRequest }) {
   // Get the ACTUALED_AUTH_KEY from environment variables
-  const expectedAuthKey = process.env.ACTUALED_AUTH_KEY
+  const expectedAuthKey = 55
   console.log({ expectedAuthKey})
 
   // Check for the Authorization header
@@ -14,7 +14,7 @@ function requireAuthKey({ req }: { req: NextRequest }) {
   // Extract the token from the header
   const token = authHeader.split(' ')[1]
   console.log({ token })
-  if (token !== expectedAuthKey) {
+  if (Number(token) !== expectedAuthKey) {
     throw new Error('Unauthorized: 2')
   }
 } 
