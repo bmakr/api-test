@@ -23,5 +23,5 @@ export async function POST(req: NextRequest) {
   requireAuthKey({ req })
   const body = await req.json()
   console.log({ body })
-  return NextResponse.json({ message: 'Hello, world!' }, { status : 200 })
+  return NextResponse.json({ message: 'Hello, world!' }, { status : 200 }) 
 }
