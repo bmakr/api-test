@@ -15,8 +15,7 @@ export function middleware(request: NextRequest) {
       headers: {
         'Access-Control-Allow-Origin': origin,
         'Access-Control-Allow-Methods': 'POST, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-        'x-vercel-protection-bypass':'f8d3c9b7a2e1f4g5h6j7k8l9m0n1o2p3'
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization'
       },
     });
   }
