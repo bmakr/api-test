@@ -1,18 +1,25 @@
 {
-  "name": "api-test",
+  "name": "actual-api",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3010",
+    "preview": "next build && next start -p 3010",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^1.0.5",
+    "@sentry/node": "^8.45.0",
     "@types/next": "^9.0.0",
+    "@upstash/ratelimit": "^2.0.5",
+    "@upstash/redis": "^1.34.3",
+    "ai": "^4.0.16",
     "next": "^15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "stripe": "^17.4.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
