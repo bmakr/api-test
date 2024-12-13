@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server"
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://actual.run'
+  'https://actual.run',     // staging
+  'https://actualint.com'   // production
 ];
 
 export function middleware(request: NextRequest) {
